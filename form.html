@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="card-img-top" src="ping1.jpg" alt="image">
+            <div class="card-body">
+                <form type="GET" action="index.html">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="lb" for="p1">Player1 Name</label>
+                            <input type="text" id="p1" name="p1" placeholder="Enter Player1 Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="lb">Select No. of Players</label><br>
+                            <input type="radio" style="margin-left: 10px;" id="ai" name="ai" value="true">
+                            <label class="radio" for="ai">Single Player</label>
+                            <input type="radio" id="2p" style="margin-left: 50px;" name="ai" value="false">
+                            <label class="radio" for="2p">2 Players</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="lb" for="p2">Player2 Name</label>
+                            <input type="text" id="p2" name="p2" placeholder="Enter Player2 Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="lb" for="score">Target Score</label>
+                            <input type="text" id="score" name="score" placeholder="Enter Score">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="lb">Select Number of balls with which you wanna play</label><br>
+                            <input type="radio" id="b1" style="margin-left: 10px;" name="ball" value="false">
+                            <label class="radio" for="b1">1 Ball</label>
+                            <input type="radio" style="margin-left: 50px;" id="b2" name="ball" value="true">
+                            <label class="radio" for="b2">2 Balls</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Play">
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
